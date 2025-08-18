@@ -1,0 +1,27 @@
+{
+  "name": "spy-monge-ai-encryption",
+  "version": "1.0.0",
+  "description": "Sistema avançado de criptografia de arquivos com conversão para formato .mltp",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "encrypt": "node app.js encrypt",
+    "decrypt": "node app.js decrypt"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "commander": "^11.1.0",
+    "chalk": "^4.1.2",
+    "progress": "^2.0.3"
+  },
+  "keywords": [
+    "encryption",
+    "cryptography",
+    "file-security",
+    "nodejs"
+  ],
+  "author": "Spy.Monge.AI",
+  "license": "MIT"
+}
