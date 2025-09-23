@@ -1,206 +1,258 @@
-# 😭 4CRY ENCRYPT v2.2 - "For Cry" Secure & Reliable System
+# 🔐 4CRY ENCRYPT v2.2 - Advanced File Encryption System
 
-Sistema avançado de criptografia seguro e confiável! Converte qualquer arquivo para `.4cry` com compressão moderada, múltiplas camadas de segurança e máxima compatibilidade com arquivos binários como PDFs.
+A professional-grade file encryption system that converts any file to the secure `.4cry` format with moderate compression, multiple security layers, and maximum compatibility with binary files including PDFs.
 
-## 🚀 Características Avançadas
+## 🚀 Advanced Features
 
-### 🔒 Múltiplas Camadas de Criptografia
-- **AES-256-GCM**: Criptografia simétrica de nível militar com autenticação
-- **PBKDF2**: Derivação segura de chaves com 100.000 iterações
-- **HMAC-SHA256**: Verificação de integridade dos dados
-- **Tag de Autenticação**: Proteção contra manipulação de dados
+### 🔒 Multi-Layer Encryption Architecture
+- **AES-256-GCM**: Military-grade symmetric encryption with authentication
+- **PBKDF2**: Secure key derivation with 100,000 iterations
+- **HMAC-SHA256**: Data integrity verification
+- **Authentication Tag**: Protection against data tampering
 
-### 🛡️ Recursos de Segurança v2.2
-- **🗜️ Compressão Segura**: Deflate ou Gzip (nível 6) para máxima compatibilidade
-- **✅ PDF/Binário Safe**: Sem pré-processamento que corrompe arquivos
-- **🔒 100% Integridade**: Preserva todos os dados originais
-- **Steganografia de Metadados**: Oculta informações do arquivo original
-- **Verificação de Integridade**: Detecta qualquer alteração nos dados
-- **Salt Único**: Cada arquivo usa salt diferente
+### 🛡️ Security Features v2.2
+- **🗜️ Safe Compression**: Deflate or Gzip (level 6) for maximum compatibility
+- **✅ Binary-Safe**: No preprocessing that corrupts files
+- **🔒 100% Integrity**: Preserves all original data
+- **Metadata Steganography**: Hides original file information
+- **Integrity Verification**: Detects any data alterations
+- **Unique Salt**: Each file uses a different salt
+- **Optional Metadata Hiding**: Enhanced privacy control
+- **Size Camouflage**: Hide real file size with random padding
+- **Random Camouflage**: Automatic random size generation for enhanced security
 
-### 🎯 Funcionalidades "For Cry" v2.2
-- Conversão de qualquer tipo de arquivo para formato `.4cry`
-- **📄 PDFs Seguros**: Funciona perfeitamente com arquivos binários
-- **🗜️ Compressão Moderada**: ~20-30% redução sem riscos
-- **📁 Organização Automática**: Pastas `input/`, `output/`, `encrypted/`, `decrypted/`
-- **🛡️ Máxima Confiabilidade**: Sistema simplificado e robusto
-- Descriptografia completa com restauração do arquivo original
-- Análise de força de senha
-- Geração automática de senhas seguras
-- Interface CLI com emojis divertidos 😭
-- Preservação total de metadados originais
+### 🎯 Core Functionality v2.2
+- Convert any file type to secure `.4cry` format
+- **📄 PDF-Safe**: Perfect compatibility with binary files
+- **🗜️ Moderate Compression**: ~20-30% size reduction without risks
+- **📁 Auto Organization**: Automatic `input/`, `output/`, `encrypted/`, `decrypted/` folders
+- **🛡️ Maximum Reliability**: Simplified and robust system
+- Complete decryption with original file restoration
+- Password strength analysis
+- Automatic secure password generation
+- Professional CLI interface
+- Complete metadata preservation
 
-## 📦 Instalação
+## 📦 Installation
 
 ```bash
-# Clone o projeto
+# Clone the project
 git clone https://github.com/ItsMeMonge/4Cry-Encrypt.git
 cd 4Cry-Encrypt
 
-# Instale as dependências
+# Install dependencies
 npm install
 
-# Torne o script executável (Linux/Mac)
+# Make the script executable (Linux/Mac)
 chmod +x 4cry.js
 ```
 
-## 🎮 Como Usar
+## 🎮 Usage
 
-### Criptografar um Arquivo
+### Encrypt a File
 
 ```bash
-# Criptografia com senha manual (salva em ./encrypted/)
-node 4cry.js encrypt minha_imagem.jpg
+# Encryption with manual password (saves to ./encrypted/)
+node 4cry.js encrypt my_image.jpg
 
-# Criptografia com senha especificada
-node 4cry.js encrypt documento.pdf -p "minha_senha_super_segura"
+# Encryption with specified password
+node 4cry.js encrypt document.pdf -p "my_super_secure_password"
 
-# Gerar senha automática (mais seguro)
+# Generate automatic password (more secure)
 node 4cry.js encrypt video.mp4 --generate-password
 
-# Especificar arquivo de saída customizado
-node 4cry.js encrypt arquivo.txt ./custom/path/arquivo.4cry
+# Specify custom output file
+node 4cry.js encrypt file.txt ./custom/path/file.4cry
+
+# Encrypt with hidden metadata for enhanced privacy
+node 4cry.js encrypt sensitive_file.pdf --hide-metadata
+
+# Encrypt with size camouflage to hide real file size
+node 4cry.js encrypt secret_document.txt --camouflage-size 10MB
+
+# Encrypt with random size camouflage
+node 4cry.js encrypt secret_file.txt --random-camouflage
+
+# Combine random camouflage with hidden metadata
+node 4cry.js encrypt confidential_data.pdf --hide-metadata --random-camouflage
 ```
 
-### Descriptografar um Arquivo
+### Decrypt a File
 
 ```bash
-# Descriptografia com prompt de senha (salva em ./decrypted/)
-node 4cry.js decrypt ./encrypted/arquivo.4cry
+# Decryption with password prompt (saves to ./decrypted/)
+node 4cry.js decrypt ./encrypted/file.4cry
 
-# Descriptografia com senha especificada
-node 4cry.js decrypt ./encrypted/arquivo.4cry -p "minha_senha_super_segura"
+# Decryption with specified password
+node 4cry.js decrypt ./encrypted/file.4cry -p "my_super_secure_password"
 
-# Especificar arquivo de saída customizado
-node 4cry.js decrypt ./encrypted/arquivo.4cry ./restored/arquivo_original.jpg
+# Specify custom output file
+node 4cry.js decrypt ./encrypted/file.4cry ./restored/original_file.jpg
 ```
 
-### Utilitários de Senha
+### Password Utilities
 
 ```bash
-# Gerar senha segura
+# Generate secure password
 node 4cry.js generate-password
 
-# Gerar senha com tamanho específico
+# Generate password with specific length
 node 4cry.js generate-password --length 64
 
-# Analisar força de uma senha
-node 4cry.js analyze-password "minha_senha123"
+# Analyze password strength
+node 4cry.js analyze-password "my_password123"
 ```
 
-## 🔍 Exemplo Prático
+## 🔍 Practical Example
 
 ```bash
-# 1. Criptografar uma imagem
-node 4cry.js encrypt foto_secreta.jpg
+# 1. Encrypt an image
+node 4cry.js encrypt secret_photo.jpg
 
-  # O sistema pedirá uma senha e criará foto_secreta.jpg.4cry
+# The system will prompt for a password and create secret_photo.jpg.4cry
 
-  # 2. Descriptografar a imagem
-node 4cry.js decrypt ./encrypted/foto_secreta.jpg.4cry
+# 2. Decrypt the image
+node 4cry.js decrypt ./encrypted/secret_photo.jpg.4cry
 
-  # O sistema pedirá a senha e restaurará a imagem original
+# The system will prompt for the password and restore the original image
 ```
 
-## 🏗️ Estrutura do Arquivo .4cry
+## 🏗️ .4cry File Structure
 
 ```
 ┌─────────────────────────┐
-│ Assinatura "4CRY_v2.0"  │ (9 bytes)
+│ Signature "4CRY_v2.0"   │ (9 bytes)
 ├─────────────────────────┤
-│ Header 4CRY v2.2        │ (256 bytes)
+│ 4CRY v2.2 Header        │ (256 bytes)
 ├─────────────────────────┤
-│ Salt Criptográfico      │ (32 bytes)
+│ Cryptographic Salt      │ (32 bytes)
 ├─────────────────────────┤
-│ IV AES-256-GCM          │ (16 bytes)
+│ AES-256-GCM IV          │ (16 bytes)
 ├─────────────────────────┤
-│ Auth Tag GCM            │ (16 bytes)
+│ GCM Auth Tag            │ (16 bytes)
 ├─────────────────────────┤
-│ HMAC de Integridade     │ (32 bytes)
+│ Integrity HMAC          │ (32 bytes)
 ├─────────────────────────┤
-│ Chave HMAC              │ (32 bytes)
+│ HMAC Key                │ (32 bytes)
 ├─────────────────────────┤
-│ Metadados Seguros       │ (variável)
+│ Secure Metadata         │ (variable)
 ├─────────────────────────┤
-│ Dados Criptografados    │ (variável)
+│ Encrypted Data          │ (variable)
 └─────────────────────────┘
 ```
 
-## 🔐 Algoritmos de Segurança Utilizados
+## 🔐 Security Algorithms Used
 
-| Componente | Algoritmo | Tamanho da Chave | Propósito |
-|------------|-----------|------------------|-----------|
-| Criptografia Simétrica | AES-256-GCM | 256 bits | Criptografia principal |
-| Derivação de Chave | PBKDF2-SHA256 | 256 bits | Derivar chave da senha |
-| Verificação de Integridade | HMAC-SHA256 | 256 bits | Detectar alterações |
-| Compressão | Deflate/Gzip | N/A | Reduzir tamanho (nível 6) |
-| Números Aleatórios | crypto.randomBytes | N/A | Salt, IV, padding |
+| Component | Algorithm | Key Size | Purpose |
+|-----------|-----------|----------|---------|
+| Symmetric Encryption | AES-256-GCM | 256 bits | Primary encryption |
+| Key Derivation | PBKDF2-SHA256 | 256 bits | Derive key from password |
+| Integrity Verification | HMAC-SHA256 | 256 bits | Detect alterations |
+| Compression | Deflate/Gzip | N/A | Reduce size (level 6) |
+| Random Numbers | crypto.randomBytes | N/A | Salt, IV, padding |
 
-## ⚠️ Considerações de Segurança v2.2
+## ⚠️ Security Considerations v2.2
 
-1. **Senhas Fortes**: Use senhas com pelo menos 12 caracteres, incluindo maiúsculas, minúsculas, números e símbolos
-2. **Backup de Senhas**: Guarde as senhas em local seguro - sem elas os arquivos são irrecuperáveis
-3. **Arquivos Sensíveis**: Para dados extremamente sensíveis, considere usar o gerador de senhas automático
-4. **Verificação de Integridade**: O sistema detecta automaticamente arquivos corrompidos ou modificados
-5. **📄 PDFs Seguros**: Versão 2.2 garante compatibilidade total com arquivos binários
+1. **Strong Passwords**: Use passwords with at least 12 characters, including uppercase, lowercase, numbers, and symbols
+2. **Password Backup**: Store passwords securely - without them, files are unrecoverable
+3. **Sensitive Files**: For extremely sensitive data, consider using the automatic password generator
+4. **Integrity Verification**: The system automatically detects corrupted or modified files
+5. **📄 PDF-Safe**: Version 2.2 ensures total compatibility with binary files
+6. **Metadata Privacy**: Use `--hide-metadata` flag for enhanced privacy when encrypting sensitive files
+7. **Size Camouflage**: Use `--camouflage-size` to hide the real file size (e.g., `--camouflage-size 5MB`)
+8. **Random Camouflage**: Use `--random-camouflage` for automatic random size generation
 
-## 🚧 Limitações Atuais
+## 🚧 Current Limitations
 
-- Arquivos muito grandes (>2GB) podem exigir mais memória RAM
-- A descriptografia requer a senha exata usada na criptografia
-- Não há recuperação de senha - mantenha-as seguras
-- Compressão moderada (~20-30%) priorizando segurança sobre tamanho
+- Very large files (>2GB) may require more RAM
+- Decryption requires the exact password used for encryption
+- No password recovery - keep them secure
+- Moderate compression (~20-30%) prioritizing security over size
 
-## 🆕 Novidades v2.2 - "Secure & Reliable"
+## 🆕 What's New v2.2 - "Secure & Reliable"
 
-### ✅ Correções Importantes:
-- **🔧 PDF Fix**: Corrigido problema que corrompia arquivos PDF e binários
-- **🗜️ Compressão Simplificada**: Removida ultra-compressão agressiva
-- **🛡️ Máxima Compatibilidade**: Sistema agora funciona com 100% dos tipos de arquivo
-- **⚡ Performance**: Mais rápido e estável
-- **🎯 Foco na Segurança**: Prioriza integridade sobre compressão extrema
+### ✅ Important Fixes:
+- **🔧 PDF Fix**: Fixed issue that corrupted PDF and binary files
+- **🗜️ Simplified Compression**: Removed aggressive ultra-compression
+- **🛡️ Maximum Compatibility**: System now works with 100% of file types
+- **⚡ Performance**: Faster and more stable
+- **🎯 Security Focus**: Prioritizes integrity over extreme compression
+- **🔒 Enhanced Privacy**: Optional metadata hiding for sensitive operations
+- **🎭 Size Camouflage**: Hide real file size with random padding
+- **🎲 Random Camouflage**: Automatic intelligent size generation
 
-### 🔄 Diferenças da v2.1:
-| Aspecto | v2.1 (Ultra) | v2.2 (Secure) |
-|---------|-------------|---------------|
-| Compressão | 50-70% | 20-30% |
-| PDFs | ❌ Corrompiam | ✅ Funcionam |
-| Complexidade | Alta | Simples |
-| Confiabilidade | Média | Alta |
-| Velocidade | Lenta | Rápida |
+### 🔄 Differences from v2.1:
+| Aspect | v2.1 (Ultra) | v2.2 (Secure) |
+|--------|-------------|---------------|
+| Compression | 50-70% | 20-30% |
+| PDFs | ❌ Corrupted | ✅ Works |
+| Complexity | High | Simple |
+| Reliability | Medium | High |
+| Speed | Slow | Fast |
+| Privacy Control | Basic | Enhanced |
 
-## ❓ FAQ - Perguntas Frequentes
+## ❓ FAQ - Frequently Asked Questions
 
-### 🤔 Por que meus PDFs não funcionavam na v2.1?
-A versão 2.1 tinha pré-processamento agressivo que modificava dados binários. A v2.2 remove isso completamente.
+### 🤔 Why didn't my PDFs work in v2.1?
+Version 2.1 had aggressive preprocessing that modified binary data. v2.2 removes this completely.
 
-### 📊 Por que a compressão diminuiu?
-Priorizamos **integridade** sobre compressão extrema. É melhor ter 20% de redução segura que 70% com risco de corrupção.
+### 📊 Why did compression decrease?
+We prioritized **integrity** over extreme compression. It's better to have 20% safe reduction than 70% with corruption risk.
 
-### 🔐 Os arquivos ainda são seguros?
-**Sim!** A segurança AES-256-GCM permanece inalterada. Apenas simplificamos a compressão.
+### 🔐 Are files still secure?
+**Yes!** AES-256-GCM security remains unchanged. We only simplified compression.
 
-### 🚀 Qual a diferença do "For Cry" original?
-- **Original**: Nome engraçado, ultra-compressão 
-- **v2.2**: Nome engraçado, **funcionamento real** 😭
+### 🚀 What's the difference from the original "For Cry"?
+- **Original**: Funny name, ultra-compression 
+- **v2.2**: Funny name, **actual functionality** 😭
 
-### 📄 Posso usar com qualquer tipo de arquivo?
-**Sim!** PDFs, imagens, vídeos, executáveis - todos funcionam perfeitamente na v2.2.
+### 📄 Can I use it with any file type?
+**Yes!** PDFs, images, videos, executables - all work perfectly in v2.2.
 
-## 🔮 Próximas Versões
+### 🔒 What does the --hide-metadata option do?
+The `--hide-metadata` flag removes file metadata from the encrypted file, providing enhanced privacy for sensitive documents. This prevents information about the original file from being stored in the encrypted container.
 
-- [ ] Interface gráfica (GUI)
-- [ ] Criptografia de múltiplos arquivos
-- [ ] Armazenamento seguro de chaves
-- [ ] Modo de criptografia em lote
-- [ ] Suporte a pastas completas
+### 🎭 What does the --camouflage-size option do?
+The `--camouflage-size` flag allows you to hide the real size of your encrypted file by adding random padding. This is useful for operational security when you want to disguise that a small file contains important data. For example, a 1KB text file can be made to appear as a 10MB file.
 
-## 📄 Licença
+**Examples:**
+- `--camouflage-size 5MB` - Makes the file appear as 5 megabytes
+- `--camouflage-size 1.2GB` - Makes the file appear as 1.2 gigabytes  
+- `--camouflage-size 500KB` - Makes the file appear as 500 kilobytes
 
-Este projeto está licenciado sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+**Important:** The camouflage size must be larger than the original encrypted file size.
+
+### 🎲 What does the --random-camouflage option do?
+The `--random-camouflage` flag automatically generates a random size for your encrypted file based on intelligent algorithms. This provides maximum security without requiring you to specify exact sizes.
+
+**How it works:**
+- **Small files (< 1KB)**: Multiplied by 10-100x (e.g., 100 bytes → 1-10 KB)
+- **Medium files (< 1MB)**: Multiplied by 5-50x (e.g., 50 KB → 250 KB - 2.5 MB)
+- **Large files (< 100MB)**: Multiplied by 2-10x (e.g., 10 MB → 20-100 MB)
+- **Very large files (≥ 100MB)**: Multiplied by 1.1-3x (e.g., 200 MB → 220-600 MB)
+
+**Benefits:**
+- **Automatic**: No need to calculate sizes manually
+- **Intelligent**: Adapts to file size for realistic camouflage
+- **Secure**: Random generation prevents pattern analysis
+- **Convenient**: Perfect for batch operations
+
+## 🔮 Future Versions
+
+- [ ] Graphical User Interface (GUI)
+- [ ] Multiple file encryption
+- [ ] Secure key storage
+- [ ] Batch encryption mode
+- [ ] Full folder support
+- [ ] Cloud integration
+- [ ] Key management system
+
+## 📄 License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
 ---
 
-**4CRY ENCRYPT v2.2** - "For Cry, but now it actually works!" 😭🚀
+**4CRY ENCRYPT v2.2** - "Professional encryption that actually works!" 🔐🚀
 
-*Desenvolvido por ItsMeMonge* 💻
+*Developed by ItsMeMonge* 💻
