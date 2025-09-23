@@ -3,3 +3,5 @@ input
 encrypted
 decrypted
 output
+key_storage
+keys
