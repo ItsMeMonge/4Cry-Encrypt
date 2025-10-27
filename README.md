@@ -739,83 +739,29 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 
 ---
 
-<div align="center">
+## 👨‍💻 Credits
 
-## 👨‍💻 Credits and Acknowledgments
-
-### 🎩 Sr. Monge - Main Developer
-
-**4CRY ENCRYPT v3.0** - Military-Grade Encryption System
-
-![Built with](https://img.shields.io/badge/built%20with-Love-red.svg)
-![Node](https://img.shields.io/badge/node.js-%3E%3D12.0.0-green.svg)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-
----
-
-### 🙏 Special Thanks
-
-**Sr. Monge** developed this advanced encryption system to provide a professional, secure, and easy-to-use solution for protecting sensitive data.
-
-**Development Features:**
-- 🧠 **Professional Architecture**: Clean and well-structured code
-- 🔐 **Cutting-Edge Security**: Military-grade algorithm implementation
-- ⚡ **Optimized Performance**: Fast and efficient system
-- 📚 **Complete Documentation**: Detailed guides and practical examples
-- 🛡️ **Security Commitment**: Total focus on data protection
-
-**Project Contributions:**
-- Complete multi-layer encryption system
-- DESTROY command for permanent data elimination
-- Intelligent key and password management
-- Security audit system
-- Performance optimizations
-
----
-
-### 🌟 Support and Community
-
-- **GitHub**: [ItsMeMonge/4Cry-Encrypt](https://github.com/ItsMeMonge/4Cry-Encrypt)
-- **Issues**: Report bugs or suggest improvements
-- **Pull Requests**: Contributions are welcome!
-
----
-
-**Developed with ❤️ by Sr. Monge 🎩**
+**Developed by Sr. Monge 🎩**
 
 > *"Protect what's yours with the security you deserve"*
 
----
+**Features:**
+- 🔐 Military-grade encryption
+- ⚡ 2-3x faster performance
+- 💀 Permanent data destruction (DESTROY)
+- 📦 60+ features implemented
 
-### 📊 Project Statistics
-
-```
-🔐 Advanced Encryption System
-📦 60+ features implemented
-⚡ Optimized performance (2-3x faster)
-🛡️ Military-grade security
-💀 Permanent data destruction
-```
-
----
-
-### 🚀 Next Steps
-
-1. 📥 Clone the repository
-2. 📦 Install dependencies
-3. 🔐 Start protecting your data
-4. 💀 Use DESTROY to permanently eliminate data
-
-**Thank you for using 4CRY ENCRYPT! 🎉**
-
-</div>
+**Support:**
+- **GitHub**: [ItsMeMonge/4Cry-Encrypt](https://github.com/ItsMeMonge/4Cry-Encrypt)
+- **Issues**: Report bugs or suggest improvements
+- **Contributions**: Pull requests welcome!
 
 ---
 
 <div align="center">
 
-**4CRY ENCRYPT v3.0** - Enhanced Security & Professional Features! 🔐🚀
-
 ⭐ **Star this repo if you found it useful!** ⭐
+
+**4CRY ENCRYPT v3.0** - Enhanced Security & Professional Features! 🔐🚀
 
 </div>
